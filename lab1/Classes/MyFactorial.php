@@ -12,7 +12,7 @@ class MyFactorial
        elseif ($n==1 || $n==0)
            return 1;
         else
-            return myfactorial($n-1)*$n;
+            return myFactorial($n-1)*$n;
 
     }
 }

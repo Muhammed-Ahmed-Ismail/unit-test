@@ -1,5 +1,5 @@
 <?php
-function myfactorial($n)
+function myFactorial($n)
 {
     if($n==1)
     {
@@ -15,6 +15,6 @@ function myfactorial($n)
         return null;
     }else
     {
-        return myfactorial($n-1)*$n;
+        return myFactorial($n-1)*$n;
     }
 }

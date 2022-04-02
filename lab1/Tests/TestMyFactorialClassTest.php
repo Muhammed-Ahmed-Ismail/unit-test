@@ -4,7 +4,7 @@
 use PHPUnit\Framework\TestCase;
 use Src\MyFactorial;
 
-class TestMyFactorialClass extends TestCase
+class TestMyFactorialClassTest extends TestCase
 {
     private static MyFactorial $myFactorialObject ;
     public static function setUpBeforeClass(): void
@@ -23,7 +23,7 @@ class TestMyFactorialClass extends TestCase
     public function test_factorial_for_a_random_number()
     {
         $n=rand(3,60);
-        $this->assertTrue(self::$myFactorialObject->myfactorial($n)==$n*myfactorial($n-1));
+        $this->assertTrue(self::$myFactorialObject->myfactorial($n)==$n*myFactorial($n-1));
     }
     public function test_factorial_for_boolean_value()
     {
